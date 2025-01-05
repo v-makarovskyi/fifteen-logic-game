@@ -128,4 +128,17 @@ export class FifteenGame {
       });
     return isWin;
   }
+
+  shuffle(): void {
+    do {
+      const randomInt = randomValue(50, 100);
+      let i = 0;
+      while (i < randomInt) {
+        let cellToMove = randomValue(1, 15);
+        if (this.makeMove(cellToMove)) {
+          i++;
+        }
+      }
+    } while (this.checkWin());
+  }
 }
