@@ -12,9 +12,10 @@ export interface Cell {
 
 interface GameButtonProps {
   cell: Cell;
+  onCellClick?: (cellValue: number) => void;
 }
 
-export const GameButton: FC<GameButtonProps> = ({ cell }) => {
+export const GameButton: FC<GameButtonProps> = ({ cell, onCellClick }) => {
   const shifft = 25;
   return (
     <button
@@ -23,6 +24,9 @@ export const GameButton: FC<GameButtonProps> = ({ cell }) => {
         display: cell.value === 16 ? "none" : "",
         top: `${cell.coords.row * shifft}%`,
         left: `${cell.coords.col * shifft}%`,
+      }}
+      onClick={() => {
+        if (onCellClick) onCellClick(cell.value);
       }}
     >
       <span>{cell.value}</span>
