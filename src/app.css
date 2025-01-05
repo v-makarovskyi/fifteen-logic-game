@@ -6,3 +6,93 @@
   box-sizing: border-box;
 }
 
+:root {
+  --border-radius: 5px;
+  --transition: 0.4s;
+  --main-color: rgb(109, 8, 109);
+  --accent-color: rgb(236, 95, 236);
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  flex-basis: 400px;
+  text-align: center;
+}
+
+.game .title {
+  margin-bottom: 1rem;
+  color: var(--main-color);
+  font-size: 30px;
+}
+
+.game .score {
+  margin-bottom: 1rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.game .title::first-letter {
+  text-transform: capitalize;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 2rem;
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: violet;
+  border: 2px solid red;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.game-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 25%;
+  border: none;
+  background-color: #000;
+  color: #ffffff;
+  font-size: 1.7rem;
+  box-shadow: inset 1px 1px 2px white;
+  user-select: none;
+  transition: top var(--transition) ease-in-out,
+    left var(--transition) ease-in-out;
+}
+
+.game-btn span {
+  display: inline-block;
+  width: 84%;
+  aspect-ratio: 1;
+  margin: 8%;
+  box-shadow: 0px 0px 3px var(--accent-color);
+  align-content: center;
+}
+
+.shuffle-btn {
+  padding-block: 8px;
+  padding-inline: 45px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  background-color: #000000;
+  color: #ffffff;
+  border: 3px solid var(--accent-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all var(--transition) ease-in-out;
+  font-weight: 800;
+  &:hover {
+    border-color: #000000;
+    background-color: rgb(109, 8, 109);
+  }
+}
+
