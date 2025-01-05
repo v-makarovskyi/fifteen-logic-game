@@ -78,41 +78,54 @@ export class FifteenGame {
             cell.coords.col === emptyCell.coords.col &&
             cell.coords.row === emptyCell.coords.row - 1
         );
-        if(!cellToMove) return false
-        cellToMove.coords.row++
+        if (!cellToMove) return false;
+        cellToMove.coords.row++;
         break;
       }
-      case 'bottom': {
-        cellToMove = this.cellsData.find(cell => 
+      case "bottom": {
+        cellToMove = this.cellsData.find(
+          (cell) =>
             cell.coords.col === emptyCell.coords.col &&
             cell.coords.row === emptyCell.coords.row + 1
-        )
-        if(!cellToMove) return false
-        cellToMove.coords.row--
-        break
+        );
+        if (!cellToMove) return false;
+        cellToMove.coords.row--;
+        break;
       }
-      case 'left': {
-        cellToMove = this.cellsData.find(cell => 
+      case "left": {
+        cellToMove = this.cellsData.find(
+          (cell) =>
             cell.coords.row === emptyCell.coords.row &&
-            cell.coords.col === emptyCell.coords.col - 1 
-        ) 
-        if(!cellToMove) return false
-        cellToMove.coords.col++
-        break
+            cell.coords.col === emptyCell.coords.col - 1
+        );
+        if (!cellToMove) return false;
+        cellToMove.coords.col++;
+        break;
       }
-      case 'right': {
-        cellToMove = this.cellsData.find(cell => 
+      case "right": {
+        cellToMove = this.cellsData.find(
+          (cell) =>
             cell.coords.row === emptyCell.coords.row &&
             cell.coords.col === emptyCell.coords.col + 1
-        )
-        if(!cellToMove) return false
-        cellToMove.coords.col--
-        break
+        );
+        if (!cellToMove) return false;
+        cellToMove.coords.col--;
+        break;
       }
       default:
         return false;
     }
-    emptyCell.coords = nextEmptyCellCoords
-    return true
+    emptyCell.coords = nextEmptyCellCoords;
+    return true;
+  }
+
+  checkWin(): boolean {
+    const isWin = this.cellsData
+      .filter((cell) => cell.value !== 16)
+      .every((cell, idx) => {
+        let position: number = FifteenGame.getCellPosition(cell);
+        return position === idx;
+      });
+    return isWin;
   }
 }
