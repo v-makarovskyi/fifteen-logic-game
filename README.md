@@ -7,7 +7,7 @@ you must have it installed Node.js
 ```sh
 - git clone https://github.com/v-makarovskyi/fifteen-logic-game.git
 - cd fifteen-logic-game
-- npm install
+- npm init
 - npm start
 ```
 Runs the app in the development mode.\
