@@ -2,9 +2,9 @@
 
 This project: https://fifteen-logic-game-6tonpozlt-vmakarovskyis-projects.vercel.app
 
-## Available Scripts
-
-In the project directory, you can run:
+## Installation instructions
+___
+you must have it installed Node.js
 
 ### `npm start`
 
