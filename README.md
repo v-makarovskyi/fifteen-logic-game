@@ -1,6 +1,6 @@
 # Fifteen puzzle game
 
-This project was bootstrapped with [Create React App]().
+This project: https://fifteen-logic-game.vercel.app/.
 
 ## Available Scripts
 
