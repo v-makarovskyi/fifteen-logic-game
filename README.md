@@ -4,7 +4,7 @@ This project: https://fifteen-logic-game-6tonpozlt-vmakarovskyis-projects.vercel
 
 ## Installation instructions
 you must have it installed Node.js
-1. git clone 'https://github.com/v-makarovskyi/fifteen-logic-game.git'
+1. git clone https://github.com/v-makarovskyi/fifteen-logic-game.git
 2. cd fifteen-logic-game
 3. npm install
 4. ### `npm start`
