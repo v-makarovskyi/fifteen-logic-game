@@ -3,7 +3,6 @@
 This project: https://fifteen-logic-game-6tonpozlt-vmakarovskyis-projects.vercel.app
 
 ## Installation instructions
-___
 you must have it installed Node.js
 
 ### `npm start`
