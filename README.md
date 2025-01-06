@@ -1,6 +1,6 @@
 # Fifteen puzzle game
 
-This project: https://fifteen-logic-game.vercel.app/.
+This project: https://fifteen-logic-game-6tonpozlt-vmakarovskyis-projects.vercel.app
 
 ## Available Scripts
 
