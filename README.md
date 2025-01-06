@@ -4,10 +4,10 @@ This project: https://fifteen-logic-game-6tonpozlt-vmakarovskyis-projects.vercel
 
 ## Installation instructions
 you must have it installed Node.js
-1. git clone https://github.com/v-makarovskyi/fifteen-logic-game.git
-2. cd fifteen-logic-game
-3. npm install
-4. ### `npm start`
+- git clone https://github.com/v-makarovskyi/fifteen-logic-game.git
+- cd fifteen-logic-game
+- npm install
+- ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
