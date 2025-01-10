@@ -1,6 +1,6 @@
 # Fifteen logic game
 
-This project: https://fifteen-logic-game-6tonpozlt-vmakarovskyis-projects.vercel.app
+This project: https://fifteen-logic-game.vercel.app/
 
 ## Installation instructions
 you must have it installed Node.js
